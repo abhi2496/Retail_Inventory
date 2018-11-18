@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".EditorActivity">
+
+    <!-- Label -->
+    <TextView
+        android:text="@string/book_details"
+        style="@style/CategoryStyle" />
+
+    <!-- Name field -->
+    <EditText
+        android:id="@+id/editBookName"
+        android:hint="@string/book_name"
+        android:inputType="textCapWords"
+        style="@style/EditorFieldStyle" />
+
+    <EditText
+        android:id="@+id/editBookPrice"
+        android:hint="@string/book_price"
+        style="@style/EditorFieldStyle"/>
+
+    <EditText
+        android:id="@+id/editBookQuantity"
+        android:hint="@string/book_quantity"
+        style="@style/EditorFieldStyle" />
+
+    <!-- Label -->
+    <TextView
+        android:text="@string/supplier_info"
+        style="@style/CategoryStyle" />
+
+    <EditText
+        android:id="@+id/editSupplierName"
+        android:hint="@string/supplier_name"
+        style="@style/EditorFieldStyle"/>
+
+    <EditText
+        android:id="@+id/editSupplierContact"
+        android:hint="@string/supplier_contact"
+        style="@style/EditorFieldStyle"/>
+
+</LinearLayout>
