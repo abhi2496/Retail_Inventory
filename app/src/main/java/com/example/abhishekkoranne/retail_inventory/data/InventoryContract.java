@@ -1,5 +1,7 @@
 package com.example.abhishekkoranne.retail_inventory.data;
 
+import android.content.ContentResolver;
+import android.net.Uri;
 import android.provider.BaseColumns;
 
 public final class InventoryContract {
@@ -8,54 +10,34 @@ public final class InventoryContract {
     private InventoryContract() {
     }
 
+    public static final String CONTENT_AUTHORITY = "com.example.abhishekkoranne.retail_inventory";
+
+    public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
+
+    public static final String PATH_BOOKS = "products";
+
     public static final class InventoryEntry implements BaseColumns {
-        /**
-         * Name of database table for pets
-         */
+
+        public static final String CONTENT_LIST_TYPE =
+                ContentResolver.CURSOR_DIR_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH_BOOKS;
+
+        public static final String CONTENT_ITEM_TYPE =
+                ContentResolver.CURSOR_ITEM_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH_BOOKS;
+
+        public static final Uri CONTENT_URI = Uri.withAppendedPath(BASE_CONTENT_URI, PATH_BOOKS);
+
         public final static String TABLE_NAME = "products";
 
-        /**
-         * Unique ID number for the pet (only for use in the database table).
-         * <p>
-         * Type: INTEGER
-         */
         public final static String _ID = BaseColumns._ID;
 
-        /**
-         * Name of the product.
-         * <p>
-         * Type: TEXT
-         */
         public final static String COLUMN_PRODUCT_NAME = "name";
 
-        /**
-         * Price of the product.
-         * <p>
-         * Type: INTEGER
-         */
         public final static String COLUMN_PRODUCT_PRICE = "price";
 
-        /**
-         * Quantity of the product.
-         * <p>
-         * Type: INTEGER
-         */
         public final static String COLUMN_PRODUCT_QUANTITY = "quantity";
 
-        /**
-         * Name of the supplier.
-         * <p>
-         * Type: TEXT
-         */
         public final static String COLUMN_SUPPLIER_NAME = "suppliername";
 
-        /**
-         * Phone Number of the supplier.
-         * <p>
-         * Type: TEXT
-         */
         public final static String COLUMN_SUPPLIER_NUMBER = "suppliernumber";
-
-
     }
 }

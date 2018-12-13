@@ -7,8 +7,13 @@
     <string name="supplier_info">Supplier Info</string>
     <string name="supplier_name">Supplier Name</string>
     <string name="supplier_contact">Supplier Contact</string>
-    <string name="insert_dummy_data">Insert Dummy Data</string>
+    <string name="insert_dummy_data">Insert Book</string>
     <string name="delete_all_entries">Delete All Entries</string>
     <string name="save">Save</string>
     <string name="delete">Delete</string>
+    <string name="book_price_example">Rs. 10</string>
+    <string name="no_book">No books available</string>
+    <string name="are_you_sure">Are you sure you want to delete all books?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>
