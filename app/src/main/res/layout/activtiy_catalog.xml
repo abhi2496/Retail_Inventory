@@ -44,5 +44,5 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="16dp"
         android:src="@drawable/add" />
-ṁ
+
 </RelativeLayout>

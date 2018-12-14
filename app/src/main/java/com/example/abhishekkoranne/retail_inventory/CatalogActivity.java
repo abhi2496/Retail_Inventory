@@ -21,7 +21,8 @@ import android.widget.ListView;
 
 import com.example.abhishekkoranne.retail_inventory.data.InventoryContract.InventoryEntry;
 
-public class CatalogActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor>, InventoryCursorAdapter.InventoryItemClickListener {
+public class CatalogActivity extends AppCompatActivity
+        implements LoaderManager.LoaderCallbacks<Cursor>, InventoryCursorAdapter.InventoryItemClickListener {
 
     InventoryCursorAdapter mInventoryCursorAdapter;
     private static final int PRODUCT_LOADER = 0;

@@ -10,7 +10,7 @@ public final class InventoryContract {
     private InventoryContract() {
     }
 
-    public static final String CONTENT_AUTHORITY = "com.example.abhishekkoranne.retail_inventory";
+    public static final String CONTENT_AUTHORITY = "com.example.abhishekkoranne";
 
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
 
